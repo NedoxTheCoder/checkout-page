@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: clarus;
+    /* outline: 2px solid red; */
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.container{
+    display: flex;
+    gap: 2rem 10rem;
+    margin: 0rem 4rem;
+}
+
+img{
+    max-width: 10rem;
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+input:not(#postcode,#checkbox){
+    /* width: 90%; */
+    flex-grow: 1;
+}
+form label{
+    font-size: 0.8rem;
+}
+
+
+
+@font-face {
+    font-family: "clarus";
+    src: url(./Montserrat-Regular.ttf);
+}
+
+.wrapper{
+    border: 1px solid grey;
+    border-radius: 0.2rem;
+    padding: 0.6rem 0rem 0.6rem 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+select{
+    display: block;
+}
+.postwrap{
+    width: max-content;
+}
+
+.next{
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+form input:not(#checkbox, #submit){
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+}
+
+i{
+    color: #8b8589;
+}
+
+/* form{
+    width: 20rem;
+} */
+
+h2{
+    margin-bottom: 1rem;
+}
+
+.shipping h2{
+    margin-top: 2rem;
+}
+
+
+/* form input:not(#checkbox, #submit):focus .wrapper{
+    border: 2px solid black;
+} */
+
+label{
+    margin-bottom: 1rem;
+}
+
+select{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.6rem 0rem 0.6rem 0.3rem;
+}
+
+input[type = "submit"]{
+    padding: 0.5rem;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+
+/* label[for = "checkbox"]{
+    text-align: center;
+} */
+
+.first, .second{
+    display: flex;
+    gap: 1rem;
+    /* outline: 2px solid red; */
+    height: 10rem;
+}
+
+span:not(.rev){
+    color: orange;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+h4{
+    font-size: 1.4rem;
+    /* margin-bottom: 0.5rem; */
+}
+
+.yazilar{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.buttons{
+    width: max-content;
+    margin-top: auto;
+    border: 1px solid rgb(128, 128, 128);
+    padding: 0.5rem;
+    border-radius: 5px;
+    
+}
+button{
+    font-size: 20px;
+    padding: 0.1rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgba(172, 172, 172, 0.853);
+    cursor: pointer;
+}
+.first{
+    margin-bottom: 2rem;
+}
+
+.prices{
+    /* border: 2px solid #8b8589; */
+    height: max-content;
+    background-color: 	hsl(0, 0%, 90%);
+    padding: 1.5rem;
+    border-radius: 20px;
+    
+}
+
+.revenue p{
+    border-top: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.revenue{
+    margin-top: 3rem;
+}
+
+.revenue p:not(:last-child){
+    margin-bottom: 0.5rem;
+}
+input:not(#email):invalid{
+    animation: shake 0.3s;
+}
+@keyframes shake {
+    25% {transform: translateX(2px);}
+    50% {transform: translateX(-2px);}
+    75% {transform: translateX(2px);}
+    100% {transform: translateX(-2px);}
+}
+
+@media screen and (max-width:900px){
+    :root{
+        font-size: 14px;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .postwrap{
+        flex-grow: 1;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77e93c6a51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Checkout!</h1>
+    <div class="container">
+        <form action="">
+        <div class="contactw">
+            <h2>Contact Information</h2>
+            <div class="email">
+                <label for="email">Email</label>
+                
+                <div class="wrapper"><i class="fa-solid fa-envelope"></i><input type="email" name="email" id="email" placeholder="Enter your email..."></div>
+            </div>
+            <div class="phonew">
+                <label for="phone">Phone</label>
+                
+                <div class="wrapper"><i class="fa-solid fa-phone"></i><input type="tel" name="phone" id="phone" placeholder="Enter your phone..." pattern="[0-9]*"></div>
+            </div>
+        </div>
+        <div class="shipping">
+            <h2>Shipping Address</h2>
+            <div class="fullnamew">
+            <label for="name">Full Name</label>
+            
+            <div class="wrapper">
+                <i class="fa-solid fa-user"></i><input type="text" name="name" id="name" placeholder="Enter your full name...." pattern="[a-zA-Z\u0131\u00fc\u015f\u00e7\u011f\u00f6\u00d6\u00dc\u00c7\u0130\u011e]+[ ][a-zA-Z\u0131\u00fc\u015f\u00e7\u011f\u00f6\u00d6\u00dc\u00c7\u0130\u011e]+">
+            </div>
+        </div>
+        <div class="addressw">
+            <label for="address">Address</label>
+            
+            <div class="wrapper"><i class="fa-solid fa-house-chimney"></i><input type="text" name="address" id="address" placeholder="Enter your address..."></div>
+        </div>
+        <div class="cityw">
+            <label for="city">City</label>
+
+            <div class="wrapper"><i class="fa-solid fa-city"></i><input type="text" name="city" id="city" placeholder="Enter your city..."></div>
+        </div>
+    <div class="next">
+        <div class="countryw">
+            <label for="dropwdown">Country</label>
+            <!-- <i class="fa-solid fa-globe"></i> -->
+            <select name="dropdown" id="dropdown">
+                <option value="Turkey" selected>Turkey</option>
+                <option value="Germany">Germany</option>
+                <option value="USA">USA</option>
+                <option value="France">France</option>
+                <option value="UK">UK</option>
+            </select>
+        </div>
+        <div class="postcodew">
+            <label for="postcode">Post Code</label>
+            <i></i>
+            <div class="wrapper postwrap"><i class="fa-solid fa-envelopes-bulk"></i><input type="text" inputmode="numeric" name="postcode" id="postcode" pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" placeholder="Enter your postal code..."></div>
+        </div>
+    </div>
+    <input type="checkbox" name="checkbox" id="checkbox">
+    <label for="checkbox">See this information next time</label>
+    </div>
+    <input type="submit" value="Continue" id="submit">
+        </form>
+
+        <div class="prices">
+            <div class="smaller">
+                <div class="first">
+                    <img src="./images/photo1.png" alt="bag">
+                    <div class="yazilar">
+                       <h4>Vintage Backpack</h4> 
+                       <p class="fiyat"><span>$54.99 </span><del>$94.99</del></p>
+
+                       <div class="buttons">
+                        <button class="buttonMinus1">–</button>
+                            <p style="display: inline;" class="quantity1">1</p>
+                        <button class="buttonAdd1">+</button>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div class="second">
+                    <img src="./images/photo2.png" alt="shoes">
+                    <div class="yazilar">
+                        <h4>Levi Shoes</h4>
+                        <p class="fiyat"><span>$74.99 </span><del>$124.99</del></p>
+
+                        <div class="buttons">
+                            <button class="buttonMinus2">–</button>
+                                <p style="display: inline;" class="quantity2">1</p>
+                            <button class="buttonAdd2">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="revenue">
+                    <p>Shipping <span class="rev">$19</span></p>
+                    <p>Total <span class="rev total">$148.99</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
