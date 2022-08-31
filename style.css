@@ -127,7 +127,7 @@ input[type = "submit"]{
     height: 10rem;
 }
 
-span:not(.rev){
+.price1{
     color: orange;
     font-weight: 600;
     font-size: 1.2rem;
